@@ -1,18 +1,33 @@
 package com.rivera.mosh;
 
-import jdk.swing.interop.SwingInterOpUtils;
+//import jdk.swing.interop.SwingInterOpUtils;
+//
+//import java.awt.*;
+//import java.lang.invoke.ConstantCallSite;
+//import java.text.NumberFormat;
+//import java.util.Arrays;
+//import java.util.Date;
+//import java.util.Locale;
+//import java.util.Scanner;
 
-import java.awt.*;
-import java.lang.invoke.ConstantCallSite;
-import java.text.NumberFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main (String[] args) {
+final byte Months_IN_YEAR = 12;
+final byte PERCENT = 100;
+
+Scanner scanner = new Scanner(System.in);
+int principal = scanner.nextInt();
+
+System.out.println("Annual Interest Rate: ");
+float annualInterest = scanner.nextFloat();
+float monthlyInterest = annualInterest / PERCENT / Months_IN_YEAR;
+
+
+System.out.println();
+
 
 
 
@@ -25,10 +40,10 @@ public class Main {
 //      Example 16: Reading Input
 
 //        Sample 3: Prints first and Last name and removes extra space
-        Scanner scanner = new Scanner(System.in);  //  capture data from terminal. ".out" prints data in the terminal
-        System.out.print("Name: "); // prints question
-        String name  = scanner.nextLine().trim();  // chaining methods
-        System.out.println("You are" + " " +  name);
+//        Scanner scanner = new Scanner(System.in);  //  capture data from terminal. ".out" prints data in the terminal
+//        System.out.print("Name: "); // prints question
+//        String name  = scanner.nextLine().trim();  // chaining methods
+//        System.out.println("You are" + " " +  name);
 
 //        Sample 2:  Prints first name
 //        Scanner scanner = new Scanner(System.in);  //  capture data from terminal. ".out" prints data in the terminal
@@ -99,7 +114,7 @@ public class Main {
 
 
 //        Sample 1: Implicit casting = automatic conversion
-//        // byte  > short > int > long > float > double (compatiable because they are all numbers)
+//        // byte  > short > int > long > float > double (compatible because they are all numbers)
 //        double x = 1.1;
 //        double y =  x + 2;
 //        System.out.println(y);

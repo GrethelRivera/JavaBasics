@@ -25,7 +25,7 @@ public class Car {
         this.gasTankPercent = gasTankPercent;
 
     }
-
+//getters and setters
     public String getMake() {
         return make;
     }
