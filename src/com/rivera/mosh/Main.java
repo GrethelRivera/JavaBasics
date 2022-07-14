@@ -10,34 +10,64 @@ package com.rivera.mosh;
 //import java.util.Locale;
 //import java.util.Scanner;
 
-import java.util.Scanner;
+//import java.text.NumberFormat;
+//import java.util.Scanner;
 
-public class Main {
-
-    public static void main (String[] args) {
-final byte Months_IN_YEAR = 12;
-final byte PERCENT = 100;
-
-Scanner scanner = new Scanner(System.in);
-int principal = scanner.nextInt();
-
-System.out.println("Annual Interest Rate: ");
-float annualInterest = scanner.nextFloat();
-float monthlyInterest = annualInterest / PERCENT / Months_IN_YEAR;
+//public class Main {
+//    public static void main(String[] args) {
+//       boolean hasHighIncome = true;
+//       boolean hasGoodCredit = true;
+//       boolean hasCriminalRecord = false;
+//       boolean isEligible = hasHighIncome || hasGoodCredit;
+//
 
 
-System.out.println();
+//    }
+    // if Statements
+//    int temperature = 22;
+//    boolean isWarm = temperature > 20  && temperature < 30;
+//        System.out.println(isWarm); //returns true
+//    }
+//}
+// Logical Operators
+// Control Flow - Comparison operators( Boolean Values)
+//    public static void main (String[] args) {
+//        int x = 1;
+//        int y = 1;
+//
+//        System.out.println(x == y); // returns true
+//        System.out.println(x !=y); // returns false
+//    }
+//}
 
 
+// Project: Mortgage Calculator
+//        public static void main(String[] args) {
+//        final byte Months_IN_YEAR = 12;
+//        final byte PERCENT = 100;
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Principal: ");
+//        int principal = scanner.nextInt();
+//
+//        System.out.println("Annual Interest Rate: ");
+//        float annualInterest = scanner.nextFloat();
+//        float monthlyInterest = annualInterest / PERCENT / Months_IN_YEAR;
+//
+//
+//        System.out.println("Period (Years):");
+//        byte years = scanner.nextByte();
+//        int numberOfPayments = years * Months_IN_YEAR;
+//
+//        double mortgage = principal
+//                * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+//                / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+//
+//        String mortgageFormatted = (NumberFormat.getCurrencyInstance());
+//        System.out.println(" Mortgage: " + mortgageFormatted);
 
-
-
-
-
-
-//      Project: Mortgage Calculator
-
-//      Example 16: Reading Input
+//         Example 16: Reading Input
 
 //        Sample 3: Prints first and Last name and removes extra space
 //        Scanner scanner = new Scanner(System.in);  //  capture data from terminal. ".out" prints data in the terminal
@@ -224,5 +254,5 @@ System.out.println();
 
 //        Exercise1: write a code
 //        System.out.println("Hello World");
-    }
-}
+//    }
+//}
