@@ -64,7 +64,7 @@ public class UI {
         }
     }
 
-    public static int readInt(String question, short MIN, short MAX) {
+    public static int readInt(String question, int MIN, int MAX) {
         while (true) {
             try {
                 System.out.print(question + "\n(" + MIN + " - " + MAX + "): "); // hard code values

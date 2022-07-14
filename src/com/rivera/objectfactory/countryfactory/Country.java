@@ -9,13 +9,13 @@ public class Country {
     private int population;
     private String capital;
 
-    // build constructor
-    public Country(String name, String capital) {
+    public Country(String name, int population, String capital) {
         this.name = name;
+        this.population = population;
         this.capital = capital;
     }
-    // getters and setters
 
+    // getters and setters
 
     public String name() {
         return name;
@@ -23,6 +23,14 @@ public class Country {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int population() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
     }
 
     public String capital() {
@@ -33,6 +41,7 @@ public class Country {
         this.capital = capital;
     }
 
+
     // toString()
 
 
@@ -40,6 +49,7 @@ public class Country {
     public String toString() {
         final StringBuilder sb = new StringBuilder("Country{");
         sb.append("name='").append(name).append('\'');
+        sb.append(", population=").append(population);
         sb.append(", capital='").append(capital).append('\'');
         sb.append('}');
         return sb.toString();

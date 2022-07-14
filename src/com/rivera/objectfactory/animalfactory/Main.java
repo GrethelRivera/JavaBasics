@@ -13,7 +13,7 @@ public class Main {
 //
 
 
-        System.out.println(("Animal Factory\n\n"));
+        System.out.println("Animal Factory\n\n");
 
         String species = UI.readString("What is the species name");
         short legs = UI.readShort("How many legs does the species have?", (short) 0, (short) 300);

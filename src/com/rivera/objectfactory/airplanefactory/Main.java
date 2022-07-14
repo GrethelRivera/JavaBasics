@@ -57,7 +57,7 @@ public class Main {
         String modelName = UI.readString("What is the model name");
         String tailNumber = UI.readString("What is the tail number");
         short passengerCap = UI.readShort("What is the plane passenger capacity", (short) 0, (short) 300);
-        int marketValue = UI.readInt("What is the plane's market value");
+        int marketValue = UI.readInt("What is the plane's market value",  0 , 1000000000);
         double gasTank = UI.readDouble("What is the current gas tank percent ( as a decimal)", 0, 1);
         boolean isFlying = UI.readBoolean("Is the plane flying?");
 
