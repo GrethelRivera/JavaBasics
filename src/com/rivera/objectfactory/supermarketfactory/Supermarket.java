@@ -7,14 +7,15 @@ public class Supermarket {
 
     private String dairy;
     private String vegetables;
-    private short totalItems;
-    private boolean bill;
+    private boolean checkout;
 
-    public Supermarket(String dairy, String vegetables, short totalItems) {
+
+
+    public Supermarket(String dairy, String vegetables, boolean checkout) {
         this.dairy = dairy;
         this.vegetables = vegetables;
-        this.totalItems = totalItems;
-        this.bill = bill;
+        this.checkout = checkout;
+
     }
 
     public String dairy() {
@@ -31,32 +32,27 @@ public class Supermarket {
 
     public void setVegetables(String vegetables) {
         this.vegetables = vegetables;
-    }
 
-    public short totalItems() {
-        return totalItems;
-    }
-
-    public void setTotalItems(short totalItems) {
-        this.totalItems = totalItems;
     }
 
     public boolean bill() {
-        return bill;
+        return checkout;
     }
 
-    public void setBill(boolean bill) {
-        this.bill = bill;
+    public void setCheckout(boolean checkout) {
+        this.checkout = checkout;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Supermarket{");
-        sb.append("dairy='").append(dairy).append('\'');
-        sb.append(", vegetables='").append(vegetables).append('\'');
-        sb.append(", totalItems=").append(totalItems);
-        sb.append(", bill=").append(bill);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("");
+        sb.append("Dairy Products: '").append(dairy).append('\'');
+        sb.append("\nVegetables: '").append(vegetables).append('\'');
+        sb.append("\nCheckout: ").append(checkout);
+        //(condition)? (if true, do this) : Ternary Operator
+        sb.append("\n Thank you for shopping with us.").append(checkout ? " you may go to aisle 3 for checkout": " Please continue your shopping.");
+
+
         return sb.toString();
     }
 }
