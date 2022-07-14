@@ -56,3 +56,6 @@ public class Supermarket {
         return sb.toString();
     }
 }
+
+//TODO: public static ArrayList<String>    readListofStrings (question, min, max)
+
