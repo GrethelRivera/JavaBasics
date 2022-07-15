@@ -11,19 +11,28 @@ package com.rivera.mosh;
 //import java.util.Scanner;
 
 //import java.text.NumberFormat;
-//import java.util.Scanner;
-
+////import java.util.Scanner;
+//
 //public class Main {
+//
+//    public static void main(String[] args) {
+//        int temp = 32;
+//        if (temp > 30) ;{
+//            System.out.println("It's a hot day");
+//            System.out.println("Drink water");
+//        }else if (temp > 20)
+//            System.out.println("Beautiful day");
+//        else
+//            System.out.println("Cold day");
+//    }
+//}
+// if Statements
 //    public static void main(String[] args) {
 //       boolean hasHighIncome = true;
 //       boolean hasGoodCredit = true;
 //       boolean hasCriminalRecord = false;
 //       boolean isEligible = hasHighIncome || hasGoodCredit;
-//
-
-
 //    }
-    // if Statements
 //    int temperature = 22;
 //    boolean isWarm = temperature > 20  && temperature < 30;
 //        System.out.println(isWarm); //returns true
@@ -39,8 +48,6 @@ package com.rivera.mosh;
 //        System.out.println(x !=y); // returns false
 //    }
 //}
-
-
 // Project: Mortgage Calculator
 //        public static void main(String[] args) {
 //        final byte Months_IN_YEAR = 12;
@@ -119,8 +126,6 @@ package com.rivera.mosh;
 //         Sample 1: round Method
 //         int  result = Math. round(1.1F);
 //         System.out.println(result);
-
-
 
 
 //       Example 13: Casting

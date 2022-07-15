@@ -54,7 +54,7 @@ public class Main {
     }
 
 
-    private static Supermarket createSupermarketList () {
+    private static Supermarket createSupermarketList () {     //Encapsulation - displaying values of the variables
 
             String dairy = UI.readString("Dairy Items:");
             String vegetables = UI.readString("Vegetable Items:");
@@ -64,4 +64,5 @@ public class Main {
             return new Supermarket(dairy, vegetables, checkout);
         }
     }
+
 

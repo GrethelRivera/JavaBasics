@@ -2,8 +2,11 @@ package com.rivera.objectfactory.supermarketfactory;
 
 public class Supermarket {
 
-    //listed filed declared
+    //listed field declared
+    //can only be accessed by public methods of class 
     // Constructor, getter & setter, toString
+
+
 
     private String dairy;
     private String vegetables;
@@ -57,5 +60,7 @@ public class Supermarket {
     }
 }
 
-//TODO: public static ArrayList<String>    readListofStrings (question, min, max)
+//TODO: public static ArrayList<String> readListofStrings (question, min, max)
+
+//TODO:
 
