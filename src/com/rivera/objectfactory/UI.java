@@ -1,5 +1,7 @@
 package com.rivera.objectfactory;
 
+import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class UI {
@@ -23,7 +25,7 @@ public class UI {
 ////     }
 ////}
     public static String readString(String question) {
-        while (true) {
+        while (true) {                                         //Incremental looping
             System.out.print(question + "\nInput: ");
             String input = scanner.nextLine().trim();
             if (!input.equals("")) {
@@ -65,12 +67,12 @@ public class UI {
     }
 
     public static int readInt(String question, int MIN, int MAX) {
-        while (true) {
+        while (true) {                                                           //incremental looping
             try {
                 System.out.print(question + "\n(" + MIN + " - " + MAX + "): "); // hard code values
                 int input = scanner.nextInt();
                 scanner.nextLine();
-                if (input <= MAX && input >= MIN) {
+                if (input <= MAX && input >= MIN) {                               //use <= to capture max input
                     return input;
                 } else {
                     System.out.println("Input must be between" + MIN + "and " + MAX);
@@ -81,7 +83,6 @@ public class UI {
             }
         }
     }
-
 
 
     public static short readShort(String question, short MIN, short MAX) {
@@ -174,5 +175,46 @@ public class UI {
                 scanner.nextLine();
             }
         }
+    }
+    //TODO: public static ArrayList<String> readListOfStrings (question, min, max)
+
+    //TODO: public static String selectFromListOfString (question, ArrayList<String>)
+
+    public static ArrayList<String> readListOfStrings(String question, byte min, byte max) {
+        ArrayList<String> responses = new ArrayList<>();   // store responses
+        System.out.println(question);
+        System.out.println("Please enter at least " + min + " inputs and at most " + max + " inputs.");
+
+        for (int i = 0; i < max; i++) {
+
+            String userInput = readString("\n(" + (i + 1) + "/" + max + ")"); //(prints (1/3)
+            responses.add(userInput); // stores data in array
+
+            if (responses.size() == max) {
+                System.out.println("Maximum number of inputs have been entered.");
+
+            } else if (responses.size() >= min && !readYorNo("Would you like to add more inputs?")) break;
+        }
+        System.out.println("Your responses have been recorded.");
+        return responses;
+    }
+
+    public static boolean readYorNo(String question) {
+
+        while (true) {
+
+            String userInput = readString(question + "\n(y/n): ");
+            char selection = userInput.toLowerCase().charAt(0);
+            if (selection == 'y') return true;
+            if (selection == 'n') return false;
+            System.out.println("Input must be y or n.");
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        ArrayList<String> responses = readListOfStrings("test", (byte) 1, (byte) 3);
+        System.out.println(responses);
     }
 }
